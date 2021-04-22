@@ -15,6 +15,7 @@
     "strictFunctionTypes": false,
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "interfaces.ts"
   ]
 }

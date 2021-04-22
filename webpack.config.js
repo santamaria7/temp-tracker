@@ -4,13 +4,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: "production",
     entry: {
-        index: './src/js/emailsForm/index.ts'
+        index: './src/ts/index.ts'
     },
     output: {
         // We want webpack to build a UMD wrapper for our module
-        library: "emailsEditor",
+        library: "tempTracker",
         libraryTarget: "umd",
-        filename: "emails-input.js",
+        filename: "temp-tracker.js",
         path: path.join(__dirname, "/public"),
         publicPath: './'
     },

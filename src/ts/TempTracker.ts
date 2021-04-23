@@ -1,18 +1,19 @@
 class TempTracker {
   private inputList: number[] = [];
   private input = 0;
-  private minTemp = 0;
-  private maxTemp = 0;
-  private aveTemp = 0;
+  private minTemp: number = -Infinity;
+  private maxTemp: number = Infinity;
+  private aveTemp: number = 0;
   private static instance: TempTracker;
   constructor() {}
   private setHighest() {
-    if (this.input > this.maxTemp) {
+    if(this.maxTemp === Infinity || this.input > this.maxTemp){
       this.maxTemp = this.input;
     }
+
   }
   private setLowest() {
-    if (this.input < this.minTemp) {
+    if (this.minTemp === -Infinity || this.input < this.minTemp) {
       this.minTemp = this.input;
     }
   }
@@ -31,7 +32,7 @@ class TempTracker {
     return this.maxTemp;
   }
   getLowest() {
-    return this.maxTemp;
+    return this.minTemp;
   }
   getAverage() {
     return this.aveTemp;

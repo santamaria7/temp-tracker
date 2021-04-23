@@ -1,7 +1,7 @@
 {
   "name": "temp-tracker",
   "version": "1.0.0",
-  "description": "Assignment for Desyngner",
+  "description": "Assignment for Desygner",
   "scripts": {
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production",

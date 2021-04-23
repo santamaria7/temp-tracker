@@ -7,9 +7,9 @@ module.exports = {
         index: './src/ts/index.ts'
     },
     output: {
-        // We want webpack to build a UMD wrapper for our module
+        /*// We want webpack to build a UMD wrapper for our module
         library: "tempTracker",
-        libraryTarget: "umd",
+        libraryTarget: "umd",*/
         filename: "temp-tracker.js",
         path: path.join(__dirname, "/public"),
         publicPath: './'
